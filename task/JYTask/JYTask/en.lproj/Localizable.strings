@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  JYTask
+
+  Created by wxqdev on 14-12-29.
+  Copyright (c) 2014年 task.iteasysoft.com. All rights reserved.
+*/
+"ReturnDataInvalid" = "return data is invalid";
+"NetworkConnectionError" = "Network Connection Error";
+"AuthCodeNotNull" = "AuthCode cannot be empty";
+"SelectMember" = "Please select a member";
+"OK" = "OK";
+"Cancel" = "Cancel";
+"CurrentVersion" = "current version:";
+"CurrentAlreadyLastestVersion" = "already be lastest version";
+"DownloadLastestVersion" = "download lastest version";
+"TaskDetailLang" = "noimportnourgent;importnoturgent;notimporturgent;importurgent;new;going;finished;denyed;deleted;taskdetail;taskname;taskcontent;denyreason;import;status;taskdate;createname;assginto;finishedtime;";

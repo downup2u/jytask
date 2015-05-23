@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  JYTask
+
+  Created by wxqdev on 14-12-29.
+  Copyright (c) 2014年 task.iteasysoft.com. All rights reserved.
+*/
+"ReturnDataInvalid" = "返回数据不符要求";
+"NetworkConnectionError" = "网络连接错误";
+"AuthCodeNotNull" = "验证码不能为空";
+"OK" = "确定";
+"Cancel" = "取消";
+"CurrentVersion" = "当前版本:";
+"CurrentAlreadyLastestVersion" = "当前已经是最新版本";
+"DownloadLastestVersion" = "下载最新版本";
+"TaskDetailLang" = "不重要不紧急;重要不紧急;不重要紧急;重要紧急;新建;进行中;已完成;已拒绝;已删除;任务详情;任务名;任务内容;拒绝理由;重要性;状态;任务日期;创建人;分配给;完成时间;";

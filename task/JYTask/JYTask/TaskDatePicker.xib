@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskDatePicker" customModule="JYTask" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAddTask" destination="W80-he-QWG" id="jex-Wi-qlp"/>
+                <outlet property="btnNext" destination="JOj-HZ-fNr" id="x6b-Pg-zuL"/>
+                <outlet property="btnPickDate" destination="Zbu-Gg-Mol" id="dgy-rI-z9J"/>
+                <outlet property="btnPrev" destination="6aN-8a-3GX" id="0cd-HK-KFv"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kxx-6w-TUO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" verticalCompressionResistancePriority="200" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbu-Gg-Mol">
+                    <rect key="frame" x="55" y="0.0" width="103" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="103" id="E3R-UI-Hfz"/>
+                        <constraint firstAttribute="width" constant="103" id="JpX-v0-2NW"/>
+                        <constraint firstAttribute="height" constant="40" id="Njv-lX-gmx"/>
+                        <constraint firstAttribute="height" constant="40" id="bPo-II-olB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="2014-10-23">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="E3R-UI-Hfz"/>
+                            <exclude reference="bPo-II-olB"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onClickPickDate:" destination="-1" eventType="touchUpInside" id="FC0-z7-hbA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOj-HZ-fNr">
+                    <rect key="frame" x="163" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="2AU-kS-Jc2"/>
+                        <constraint firstAttribute="height" constant="40" id="AlH-ji-ajC"/>
+                        <constraint firstAttribute="height" constant="31" id="DUv-ex-Yox"/>
+                        <constraint firstAttribute="height" constant="40" id="fWE-hc-NSx"/>
+                        <constraint firstAttribute="width" constant="7" id="gY5-tz-a7y"/>
+                        <constraint firstAttribute="width" constant="40" id="zVo-jR-T3p"/>
+                    </constraints>
+                    <state key="normal" image="rightLnk">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2AU-kS-Jc2"/>
+                            <exclude reference="AlH-ji-ajC"/>
+                            <exclude reference="DUv-ex-Yox"/>
+                            <exclude reference="gY5-tz-a7y"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onClickNextDate:" destination="-1" eventType="touchUpInside" id="m6M-S5-vdc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W80-he-QWG">
+                    <rect key="frame" x="203" y="0.0" width="143" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="EsQ-Ll-gnK"/>
+                        <constraint firstAttribute="width" constant="75" id="UCq-Mx-01n"/>
+                        <constraint firstAttribute="height" constant="40" id="dAE-IR-d3V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="添加新任务"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="EsQ-Ll-gnK"/>
+                            <exclude reference="UCq-Mx-01n"/>
+                            <exclude reference="dAE-IR-d3V"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onClickAddTask:" destination="-1" eventType="touchUpInside" id="7AX-yk-mW2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aN-8a-3GX">
+                    <rect key="frame" x="8" y="0.0" width="40" height="40"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="0.49999999999999961" height="0.49999999999999961"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="8kf-4d-wzW"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="CbV-cN-CfN"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="EHf-kH-dkj"/>
+                        <constraint firstAttribute="height" constant="40" id="Ydy-o9-V8h"/>
+                        <constraint firstAttribute="width" constant="7" id="iaq-Ud-iMU"/>
+                        <constraint firstAttribute="height" constant="40" id="lPD-a4-XdM"/>
+                    </constraints>
+                    <state key="normal" image="leftLnk">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ydy-o9-V8h"/>
+                            <exclude reference="iaq-Ud-iMU"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onClickPrevDate:" destination="-1" eventType="touchUpInside" id="JU2-PQ-H0I"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6aN-8a-3GX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="BAZ-Lb-gxq"/>
+                <constraint firstItem="JOj-HZ-fNr" firstAttribute="leading" secondItem="Zbu-Gg-Mol" secondAttribute="trailing" constant="5" id="Btt-DJ-KVW"/>
+                <constraint firstItem="W80-he-QWG" firstAttribute="leading" secondItem="JOj-HZ-fNr" secondAttribute="trailing" id="EbN-G6-rwN"/>
+                <constraint firstItem="W80-he-QWG" firstAttribute="bottom" secondItem="JOj-HZ-fNr" secondAttribute="bottom" id="KUU-su-i2m"/>
+                <constraint firstItem="JOj-HZ-fNr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Knq-vD-VgG"/>
+                <constraint firstItem="W80-he-QWG" firstAttribute="top" secondItem="JOj-HZ-fNr" secondAttribute="top" id="X56-Bg-gkG"/>
+                <constraint firstItem="Zbu-Gg-Mol" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aKq-Mc-xbr"/>
+                <constraint firstItem="6aN-8a-3GX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d0Z-Tw-foi"/>
+                <constraint firstItem="6aN-8a-3GX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d7l-ZT-FhC"/>
+                <constraint firstItem="6aN-8a-3GX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ooK-VH-Yku"/>
+                <constraint firstItem="Zbu-Gg-Mol" firstAttribute="leading" secondItem="6aN-8a-3GX" secondAttribute="trailing" constant="5" id="uXV-NZ-spK"/>
+                <constraint firstAttribute="trailing" secondItem="W80-he-QWG" secondAttribute="trailing" constant="16" id="z4r-MO-MvV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-83" y="193.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="leftLnk" width="7" height="12"/>
+        <image name="rightLnk" width="7" height="12"/>
+    </resources>
+</document>

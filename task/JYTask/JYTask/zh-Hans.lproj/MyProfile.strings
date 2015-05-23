@@ -1,0 +1,150 @@
+
+/* Class = "IBUILabel"; text = "创建时间"; ObjectID = "1Y9-qw-9O5"; */
+"1Y9-qw-9O5.text" = "创建时间";
+
+/* Class = "IBUINavigationItem"; title = "邀请"; ObjectID = "2vS-4h-vwo"; */
+"2vS-4h-vwo.title" = "邀请";
+
+/* Class = "IBUILabel"; text = "当前版本"; ObjectID = "6hP-fu-EpU"; */
+"6hP-fu-EpU.text" = "当前版本";
+
+/* Class = "IBUILabel"; text = "修改密码"; ObjectID = "8ao-JY-gdE"; */
+"8ao-JY-gdE.text" = "修改密码";
+
+/* Class = "IBUIButton"; normalTitle = "创建"; ObjectID = "8dt-cS-fGj"; */
+"8dt-cS-fGj.normalTitle" = "创建";
+
+/* Class = "IBUILabel"; text = "姓名"; ObjectID = "8g7-XV-lZB"; */
+"8g7-XV-lZB.text" = "姓名";
+
+/* Class = "IBUILabel"; text = "18118003630"; ObjectID = "92u-mr-Rm7"; */
+"92u-mr-Rm7.text" = "18118003630";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "ALZ-Bg-mUl"; */
+"ALZ-Bg-mUl.title" = "返回";
+
+/* Class = "IBUIButton"; normalTitle = "解散组织"; ObjectID = "AsH-vm-ngn"; */
+"AsH-vm-ngn.normalTitle" = "解散组织";
+
+/* Class = "IBUITextField"; placeholder = "请输入组织名"; ObjectID = "B3o-0I-7Ni"; */
+"B3o-0I-7Ni.placeholder" = "请输入组织名";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "BjU-fK-4fY"; */
+"BjU-fK-4fY.title" = "返回";
+
+/* Class = "IBUILabel"; text = "创建组织"; ObjectID = "Bnp-Nm-BmP"; */
+"Bnp-Nm-BmP.text" = "创建组织";
+
+/* Class = "IBUILabel"; text = "组织成员"; ObjectID = "Da9-5c-p0h"; */
+"Da9-5c-p0h.text" = "组织成员";
+
+/* Class = "IBUILabel"; text = "wangxiaoqing"; ObjectID = "FZ2-wx-9rh"; */
+"FZ2-wx-9rh.text" = "wangxiaoqing";
+
+/* Class = "IBUILabel"; text = "登录密码"; ObjectID = "FlW-Ww-Hxc"; */
+"FlW-Ww-Hxc.text" = "登录密码";
+
+/* Class = "IBUINavigationItem"; title = "常州简易软件有限公司"; ObjectID = "K3o-Tq-qUn"; */
+"K3o-Tq-qUn.title" = "常州简易软件有限公司";
+
+/* Class = "IBUINavigationItem"; title = "我的信息"; ObjectID = "LTa-OE-nbA"; */
+"LTa-OE-nbA.title" = "我的信息";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "LY9-dw-IMw"; */
+"LY9-dw-IMw.title" = "返回";
+
+/* Class = "IBUITableViewController"; title = "我的信息"; ObjectID = "MGc-N9-mF8"; */
+"MGc-N9-mF8.title" = "我的信息";
+
+/* Class = "IBUIBarButtonItem"; title = "邀请"; ObjectID = "NnQ-2s-rJ2"; */
+"NnQ-2s-rJ2.title" = "邀请";
+
+/* Class = "IBUILabel"; text = "用户名称"; ObjectID = "Nrr-zt-JQo"; */
+"Nrr-zt-JQo.text" = "用户名称";
+
+/* Class = "IBUIButton"; normalTitle = "84"; ObjectID = "SAL-uT-le0"; */
+"SAL-uT-le0.normalTitle" = "84";
+
+/* Class = "IBUILabel"; text = "输入旧密码"; ObjectID = "SEf-T6-Gqt"; */
+"SEf-T6-Gqt.text" = "输入旧密码";
+
+/* Class = "IBUILabel"; text = "张三"; ObjectID = "Sqi-hO-3JD"; */
+"Sqi-hO-3JD.text" = "张三";
+
+/* Class = "IBUIButton"; normalTitle = "转让管理权限"; ObjectID = "TtQ-Xu-52y"; */
+"TtQ-Xu-52y.normalTitle" = "转让管理权限";
+
+/* Class = "IBUILabel"; text = "登录账号"; ObjectID = "WlG-NQ-Nwi"; */
+"WlG-NQ-Nwi.text" = "登录账号";
+
+/* Class = "IBUILabel"; text = "账号"; ObjectID = "XnS-gr-vBU"; */
+"XnS-gr-vBU.text" = "账号";
+
+/* Class = "IBUIButton"; normalTitle = "确定"; ObjectID = "ZAD-N7-h44"; */
+"ZAD-N7-h44.normalTitle" = "确定";
+
+/* Class = "IBUINavigationItem"; title = "成员管理"; ObjectID = "b9e-pI-DMK"; */
+"b9e-pI-DMK.title" = "成员管理";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "e4f-7t-rJS"; */
+"e4f-7t-rJS.title" = "返回";
+
+/* Class = "IBUIBarButtonItem"; title = "注销"; ObjectID = "enT-Oo-MvL"; */
+"enT-Oo-MvL.title" = "注销";
+
+/* Class = "IBUILabel"; text = "加入组织"; ObjectID = "goa-rU-G6Y"; */
+"goa-rU-G6Y.text" = "加入组织";
+
+/* Class = "IBUITextField"; placeholder = "请输入邀请码"; ObjectID = "gvH-zM-eaD"; */
+"gvH-zM-eaD.placeholder" = "请输入邀请码";
+
+/* Class = "IBUIButton"; normalTitle = "邀请"; ObjectID = "izz-4m-8yu"; */
+"izz-4m-8yu.normalTitle" = "邀请";
+
+/* Class = "IBUILabel"; text = "新密码"; ObjectID = "jFR-v4-2i7"; */
+"jFR-v4-2i7.text" = "新密码";
+
+/* Class = "IBUINavigationItem"; title = "修改密码"; ObjectID = "jLn-D8-l7L"; */
+"jLn-D8-l7L.title" = "修改密码";
+
+/* Class = "IBUINavigationController"; title = "我的"; ObjectID = "jMr-Y0-qjD"; */
+"jMr-Y0-qjD.title" = "我的";
+
+/* Class = "IBUIViewController"; title = "修改密码"; ObjectID = "jdF-fY-OVz"; */
+"jdF-fY-OVz.title" = "修改密码";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "k47-ZW-u0S"; */
+"k47-ZW-u0S.title" = "返回";
+
+/* Class = "IBUILabel"; text = "创建组织"; ObjectID = "kVG-ej-8ei"; */
+"kVG-ej-8ei.text" = "创建组织";
+
+/* Class = "IBUIButton"; normalTitle = "加入"; ObjectID = "kee-N6-WaQ"; */
+"kee-N6-WaQ.normalTitle" = "加入";
+
+/* Class = "IBUILabel"; text = "2014-08-08 10:10:10"; ObjectID = "mtA-NR-zJN"; */
+"mtA-NR-zJN.text" = "2014-08-08 10:10:10";
+
+/* Class = "IBUILabel"; text = "旧密码"; ObjectID = "nqf-CL-B9L"; */
+"nqf-CL-B9L.text" = "旧密码";
+
+/* Class = "IBUIButton"; disabledTitle = "当前已经是最新版本"; ObjectID = "oA1-dH-Rzt"; */
+"oA1-dH-Rzt.disabledTitle" = "当前已经是最新版本";
+
+/* Class = "IBUIButton"; normalTitle = "下载最新版本"; ObjectID = "oA1-dH-Rzt"; */
+"oA1-dH-Rzt.normalTitle" = "下载最新版本";
+
+/* Class = "IBUIButton"; normalTitle = "退出组织"; ObjectID = "stg-1q-lIb"; */
+"stg-1q-lIb.normalTitle" = "退出组织";
+
+/* Class = "IBUINavigationItem"; title = "版本信息"; ObjectID = "t4S-bv-hLX"; */
+"t4S-bv-hLX.title" = "版本信息";
+
+/* Class = "IBUINavigationItem"; title = "创建／加入组织"; ObjectID = "whs-MJ-ibe"; */
+"whs-MJ-ibe.title" = "创建／加入组织";
+
+/* Class = "IBUITextView"; text = "玩转任务是简易软件有限公司开发的一款任务管理软件，简洁易用的界面，是该软件的亮点，简单的UI界面，严谨的软件使用流程，是用其他任务管理软件所无法匹敌的，让你的时间更有价值！"; ObjectID = "y3b-58-YMI"; */
+"y3b-58-YMI.text" = "玩转任务是简易软件有限公司开发的一款任务管理软件，简洁易用的界面，是该软件的亮点，简单的UI界面，严谨的软件使用流程，是用其他任务管理软件所无法匹敌的，让你的时间更有价值！";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "yin-Zt-QTF"; */
+"yin-Zt-QTF.title" = "返回";

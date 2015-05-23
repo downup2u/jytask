@@ -1,0 +1,171 @@
+
+/* Class = "IBUILabel"; text = "任务名"; ObjectID = "0Ba-Dt-JBd"; */
+"0Ba-Dt-JBd.text" = "任务名";
+
+/* Class = "IBUIButton"; normalTitle = "删除任务"; ObjectID = "2az-oh-IZP"; */
+"2az-oh-IZP.normalTitle" = "删除任务";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "3pB-mF-ASh"; */
+"3pB-mF-ASh.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "选择人员"; ObjectID = "5fC-zs-wlg"; */
+"5fC-zs-wlg.title" = "选择人员";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "69i-Jm-wcm"; */
+"69i-Jm-wcm.title" = "返回";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "8AA-ug-L4J"; */
+"8AA-ug-L4J.title" = "返回";
+
+/* Class = "IBUIViewController"; title = "今日任务"; ObjectID = "90e-Nj-JXs"; */
+"90e-Nj-JXs.title" = "今日任务";
+
+/* Class = "IBUIBarButtonItem"; title = "保存"; ObjectID = "AOS-5b-ham"; */
+"AOS-5b-ham.title" = "保存";
+
+/* Class = "IBUIViewController"; title = "任务详情"; ObjectID = "B4Y-hk-l5T"; */
+"B4Y-hk-l5T.title" = "任务详情";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "BVm-0L-r5Y"; */
+"BVm-0L-r5Y.title" = "返回";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "CwL-Te-PsM"; */
+"CwL-Te-PsM.text" = "Label";
+
+/* Class = "IBUIViewController"; title = "拒绝任务"; ObjectID = "DDH-a4-Wr9"; */
+"DDH-a4-Wr9.title" = "拒绝任务";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "EbI-Iq-JZT"; */
+"EbI-Iq-JZT.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "已完成"; ObjectID = "EiP-AX-zkt"; */
+"EiP-AX-zkt.title" = "已完成";
+
+/* Class = "IBUIButton"; normalTitle = "选择人员"; ObjectID = "Ezx-hh-C36"; */
+"Ezx-hh-C36.normalTitle" = "选择人员";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "Glo-Rv-GDM"; */
+"Glo-Rv-GDM.title" = "返回";
+
+/* Class = "IBUILabel"; text = "重要紧急"; ObjectID = "HYV-fu-g2a"; */
+"HYV-fu-g2a.text" = "重要紧急";
+
+/* Class = "IBUINavigationItem"; title = "任务详情"; ObjectID = "JJg-N3-Erh"; */
+"JJg-N3-Erh.title" = "任务详情";
+
+/* Class = "IBUITextField"; placeholder = "任务标题"; ObjectID = "KtI-8f-tL9"; */
+"KtI-8f-tL9.placeholder" = "任务标题";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "L5C-8v-qgV"; */
+"L5C-8v-qgV.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "查看已完成"; ObjectID = "LkX-27-4Wn"; */
+"LkX-27-4Wn.normalTitle" = "查看已完成";
+
+/* Class = "IBUIButton"; normalTitle = "添加新任务"; ObjectID = "MZ4-7L-6JV"; */
+"MZ4-7L-6JV.normalTitle" = "添加新任务";
+
+/* Class = "IBUILabel"; text = "Taskname"; ObjectID = "Nv5-93-4SG"; */
+"Nv5-93-4SG.text" = "Taskname";
+
+/* Class = "IBUISegmentedControl"; O7D-2l-DGa.segmentTitles[1] = "Second"; ObjectID = "O7D-2l-DGa"; */
+"O7D-2l-DGa.segmentTitles[1]" = "Second";
+
+/* Class = "IBUIViewController"; title = "添加新任务/编辑任务"; ObjectID = "OeK-TV-fj6"; */
+"OeK-TV-fj6.title" = "添加新任务/编辑任务";
+
+/* Class = "IBUIBarButtonItem"; title = "确定"; ObjectID = "QeZ-NN-zmS"; */
+"QeZ-NN-zmS.title" = "确定";
+
+/* Class = "IBUINavigationItem"; title = "拒绝任务"; ObjectID = "QwC-YR-qJz"; */
+"QwC-YR-qJz.title" = "拒绝任务";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "TnU-zp-0u5"; */
+"TnU-zp-0u5.title" = "返回";
+
+/* Class = "IBUIButton"; normalTitle = "拒绝"; ObjectID = "TtH-cD-19x"; */
+"TtH-cD-19x.normalTitle" = "拒绝";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "TwJ-UP-yKu"; */
+"TwJ-UP-yKu.text" = "Label";
+
+/* Class = "IBUILabel"; text = "状态"; ObjectID = "UGX-XC-Ch2"; */
+"UGX-XC-Ch2.text" = "状态";
+
+/* Class = "IBUIButton"; normalTitle = "确定"; ObjectID = "UfY-gj-L7C"; */
+"UfY-gj-L7C.normalTitle" = "确定";
+
+/* Class = "IBUITextField"; placeholder = "点击此处选择日期"; ObjectID = "VE9-kQ-Vk2"; */
+"VE9-kQ-Vk2.placeholder" = "点击此处选择日期";
+
+/* Class = "IBUILabel"; text = "任务"; ObjectID = "VTu-Yq-LBI"; */
+"VTu-Yq-LBI.text" = "任务";
+
+/* Class = "IBUILabel"; text = "1"; ObjectID = "XZ1-zS-OIu"; */
+"XZ1-zS-OIu.text" = "1";
+
+/* Class = "IBUIViewController"; title = "协作任务"; ObjectID = "dQe-Yg-VRC"; */
+"dQe-Yg-VRC.title" = "协作任务";
+
+/* Class = "IBUITextView"; text = "ee"; ObjectID = "e6G-6r-9n7"; */
+"e6G-6r-9n7.text" = "ee";
+
+/* Class = "IBUIButton"; normalTitle = "选择任务"; ObjectID = "eSw-MM-ZOe"; */
+"eSw-MM-ZOe.normalTitle" = "选择任务";
+
+/* Class = "IBUINavigationItem"; title = "添加新任务"; ObjectID = "fQj-07-AZt"; */
+"fQj-07-AZt.title" = "添加新任务";
+
+/* Class = "IBUIViewController"; title = "已完成"; ObjectID = "fhH-Pa-D3p"; */
+"fhH-Pa-D3p.title" = "已完成";
+
+/* Class = "IBUILabel"; text = "taskstatus"; ObjectID = "hbb-fW-GDR"; */
+"hbb-fW-GDR.text" = "taskstatus";
+
+/* Class = "IBUIBarButtonItem"; title = "编辑"; ObjectID = "klx-tR-6iV"; */
+"klx-tR-6iV.title" = "编辑";
+
+/* Class = "IBUILabel"; text = " 无"; ObjectID = "m5h-sd-oMc"; */
+"m5h-sd-oMc.text" = " 无";
+
+/* Class = "IBUILabel"; text = "发送者"; ObjectID = "tSd-GY-anG"; */
+"tSd-GY-anG.text" = "发送者";
+
+/* Class = "IBUIBarButtonItem"; title = "确定"; ObjectID = "tXp-cc-evQ"; */
+"tXp-cc-evQ.title" = "确定";
+
+/* Class = "IBUIButton"; normalTitle = "接受"; ObjectID = "uiT-Mw-omm"; */
+"uiT-Mw-omm.normalTitle" = "接受";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "w8i-tu-KpC"; */
+"w8i-tu-KpC.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "x7S-o3-mSo"; */
+"x7S-o3-mSo.text" = "Label";
+
+/* Class = "IBUISegmentedControl"; y0V-0Y-7Vv.segmentTitles[0] = "1"; ObjectID = "y0V-0Y-7Vv"; */
+"y0V-0Y-7Vv.segmentTitles[0]" = "1";
+
+/* Class = "IBUISegmentedControl"; y0V-0Y-7Vv.segmentTitles[1] = "2"; ObjectID = "y0V-0Y-7Vv"; */
+"y0V-0Y-7Vv.segmentTitles[1]" = "2";
+
+/* Class = "IBUISegmentedControl"; y0V-0Y-7Vv.segmentTitles[2] = "3"; ObjectID = "y0V-0Y-7Vv"; */
+"y0V-0Y-7Vv.segmentTitles[2]" = "3";
+
+/* Class = "IBUISegmentedControl"; y0V-0Y-7Vv.segmentTitles[3] = "4"; ObjectID = "y0V-0Y-7Vv"; */
+"y0V-0Y-7Vv.segmentTitles[3]" = "4";
+
+/* Class = "IBUISegmentedControl"; y0V-0Y-7Vv.segmentTitles[4] = "5"; ObjectID = "y0V-0Y-7Vv"; */
+"y0V-0Y-7Vv.segmentTitles[4]" = "5";
+
+/* Class = "IBUISegmentedControl"; y0V-0Y-7Vv.segmentTitles[5] = "6"; ObjectID = "y0V-0Y-7Vv"; */
+"y0V-0Y-7Vv.segmentTitles[5]" = "6";
+
+/* Class = "IBUISegmentedControl"; y0V-0Y-7Vv.segmentTitles[6] = "无"; ObjectID = "y0V-0Y-7Vv"; */
+"y0V-0Y-7Vv.segmentTitles[6]" = "无";
+
+/* Class = "IBUIViewController"; title = "任务首页"; ObjectID = "zit-Qr-Cui"; */
+"zit-Qr-Cui.title" = "任务首页";
+
+/* Class = "IBUIViewController"; title = "所有任务"; ObjectID = "zvn-Ad-WiH"; */
+"zvn-Ad-WiH.title" = "所有任务";

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6F57F63F-F428-4B4F-9055-7E631F5E1940</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JYTask</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>82f7fb4e-5bec-b047-9574-136d9ab78bba++5784</key>
+		<string>https://192.168.1.198/svn/jytask/trunk/src/mobile/ios/swift/worktest/task.xcworkspace</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JYTask/JYTask.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>82f7fb4e-5bec-b047-9574-136d9ab78bba++5784</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>82f7fb4e-5bec-b047-9574-136d9ab78bba++5784</key>
+		<string>https://192.168.1.198/svn/jytask</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.198/svn/jytask/trunk/src/mobile/ios/swift/worktest/task.xcworkspace/JYTask/JYTask.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>82f7fb4e-5bec-b047-9574-136d9ab78bba++5784</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>82f7fb4e-5bec-b047-9574-136d9ab78bba++5784</string>
+			<key>IDESourceControlWCCName</key>
+			<string>task</string>
+		</dict>
+	</array>
+</dict>
+</plist>

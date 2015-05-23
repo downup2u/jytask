@@ -1,0 +1,12 @@
+
+/* Class = "IBUITextView"; text = "Label"; ObjectID = "Oo5-Gh-ChN"; */
+"Oo5-Gh-ChN.text" = "Label";
+
+/* Class = "IBUINavigationController"; title = "资讯"; ObjectID = "eWm-Ey-G12"; */
+"eWm-Ey-G12.title" = "Information";
+
+/* Class = "IBUIBarButtonItem"; title = "返回"; ObjectID = "w9b-Ce-0hn"; */
+"w9b-Ce-0hn.title" = "return";
+
+/* Class = "IBUILabel"; text = "date"; ObjectID = "zBY-6Q-kFO"; */
+"zBY-6Q-kFO.text" = "date";
