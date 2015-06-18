@@ -187,7 +187,7 @@ class TaskCoworkTaskViewController: UIViewController,UITableViewDataSource,UITab
         
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String{
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String?{
         return taskSection[section]
     }
     

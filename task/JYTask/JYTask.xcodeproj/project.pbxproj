@@ -27,6 +27,7 @@
 		5F1E443519FF56FA0024D285 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E443419FF56FA0024D285 /* UIImageView+Additions.swift */; };
 		5F1E443719FF6AF70024D285 /* FileManagerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E443619FF6AF70024D285 /* FileManagerUtil.swift */; };
 		5F21C68D1A1AEEBA005F4E9B /* OCWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F21C68C1A1AEEBA005F4E9B /* OCWrap.mm */; };
+		5F36E5081B32453C00F4D859 /* libcpphonemodule.a.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5F36E5071B32453C00F4D859 /* libcpphonemodule.a.zip */; };
 		5F3CC9F31A0C9CBF0022460D /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CC9F21A0C9CBF0022460D /* SCLAlertView.swift */; };
 		5F4A5D5319FDC86B00BDA85B /* UIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4A5D5219FDC86B00BDA85B /* UIUtil.swift */; };
 		5F4A5D5719FDD6B200BDA85B /* ResetPasswordOKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4A5D5619FDD6B200BDA85B /* ResetPasswordOKViewController.swift */; };
@@ -79,7 +80,6 @@
 		5F5F5D481A90A06700D8432B /* UnknownFieldSetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5F5D3C1A909F0300D8432B /* UnknownFieldSetBuilder.swift */; };
 		5F5F5D491A90A06700D8432B /* WireFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5F5D3D1A909F0300D8432B /* WireFormat.swift */; };
 		5F607A711A28660800DCB923 /* KeyboardTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F607A701A28660800DCB923 /* KeyboardTableView.swift */; };
-		5F7D7ECF1A90B653000DC551 /* libcpphonemodule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F018A4A1A5B66CE004B0854 /* libcpphonemodule.a */; };
 		5F8E9C671A1DB2010002B844 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E9C631A1DB2010002B844 /* DeviceInfo.swift */; };
 		5F8E9C681A1DB2010002B844 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E9C641A1DB2010002B844 /* KeyboardManager.swift */; };
 		5F8E9C691A1DB2010002B844 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E9C651A1DB2010002B844 /* StringExtension.swift */; };
@@ -101,13 +101,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5F018A491A5B66CE004B0854 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F018A451A5B66CE004B0854 /* cpphonemodule.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 86D2613DF3F95F26C2AF3C09;
-			remoteInfo = cpphonemodule;
-		};
 		5F5CFFC219F7368800DB382F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5F5CFFA419F7368800DB382F /* Project object */;
@@ -118,7 +111,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F018A451A5B66CE004B0854 /* cpphonemodule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cpphonemodule.xcodeproj; path = ../cppphonemodule/proj/cpphonemodule.xcodeproj; sourceTree = "<group>"; };
 		5F018AA81A5B76D0004B0854 /* StringHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHash.swift; sourceTree = "<group>"; };
 		5F07D0621A4A76880078C771 /* TaskDetailInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailInfo.swift; sourceTree = "<group>"; };
 		5F10C33F1A09FF100092C175 /* GlobalMsgReqUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalMsgReqUtil.swift; sourceTree = "<group>"; };
@@ -154,6 +146,7 @@
 		5F1E443619FF6AF70024D285 /* FileManagerUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerUtil.swift; sourceTree = "<group>"; };
 		5F21C68B1A1AEEA4005F4E9B /* cppwrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cppwrap.h; sourceTree = "<group>"; };
 		5F21C68C1A1AEEBA005F4E9B /* OCWrap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCWrap.mm; sourceTree = "<group>"; };
+		5F36E5071B32453C00F4D859 /* libcpphonemodule.a.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = libcpphonemodule.a.zip; path = ioslibs/libcpphonemodule.a.zip; sourceTree = "<group>"; };
 		5F3CC9F21A0C9CBF0022460D /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		5F4A5D5219FDC86B00BDA85B /* UIUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtil.swift; sourceTree = "<group>"; };
 		5F4A5D5619FDD6B200BDA85B /* ResetPasswordOKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordOKViewController.swift; sourceTree = "<group>"; };
@@ -244,7 +237,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F7D7ECF1A90B653000DC551 /* libcpphonemodule.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,14 +250,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F018A461A5B66CE004B0854 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5F018A4A1A5B66CE004B0854 /* libcpphonemodule.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		5F0722FA1A149B50009AC49E /* cppwrap */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,14 +259,6 @@
 				5F21C68C1A1AEEBA005F4E9B /* OCWrap.mm */,
 			);
 			name = cppwrap;
-			sourceTree = "<group>";
-		};
-		5F16F6371A524C5F003A6B51 /* CppDeps */ = {
-			isa = PBXGroup;
-			children = (
-				5F018A451A5B66CE004B0854 /* cpphonemodule.xcodeproj */,
-			);
-			name = CppDeps;
 			sourceTree = "<group>";
 		};
 		5F5C005B19F7403800DB382F /* controls */ = {
@@ -396,7 +372,7 @@
 		5F5CFFA319F7368800DB382F = {
 			isa = PBXGroup;
 			children = (
-				5F16F6371A524C5F003A6B51 /* CppDeps */,
+				5F36E5071B32453C00F4D859 /* libcpphonemodule.a.zip */,
 				5FA25A611A14741400610F42 /* libc++.dylib */,
 				5FF150A01A0210000038F21A /* global */,
 				5F5CFFAE19F7368800DB382F /* JYTask */,
@@ -600,12 +576,6 @@
 			mainGroup = 5F5CFFA319F7368800DB382F;
 			productRefGroup = 5F5CFFAD19F7368800DB382F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 5F018A461A5B66CE004B0854 /* Products */;
-					ProjectRef = 5F018A451A5B66CE004B0854 /* cpphonemodule.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				5F5CFFAB19F7368800DB382F /* JYTask */,
@@ -614,16 +584,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		5F018A4A1A5B66CE004B0854 /* libcpphonemodule.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcpphonemodule.a;
-			remoteRef = 5F018A491A5B66CE004B0854 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		5F5CFFAA19F7368800DB382F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -631,6 +591,7 @@
 			files = (
 				5FB2898A1A01C7960026DFE1 /* Main.storyboard in Resources */,
 				5FEDAD771A63AC4B00709020 /* Images.xcassets in Resources */,
+				5F36E5081B32453C00F4D859 /* libcpphonemodule.a.zip in Resources */,
 				5F16F5FE1A5114AA003A6B51 /* Adv.storyboard in Resources */,
 				5F16F6051A5114BF003A6B51 /* Task.storyboard in Resources */,
 				5F8E9C8B1A1DCC8D0002B844 /* left_arrow@2x.png in Resources */,
