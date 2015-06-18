@@ -22,7 +22,12 @@ func sendProtobufMsg(msgReq:GeneratedMessageBuilder,msgReply:GeneratedMessageBui
     
     
     var cnamereq:String = msgReq.internalGetResult.classMetaType().className()
-    cnamereq = "comm." + cnamereq
+    if cnamereq.hasPrefix("Comm."){
+        var stringindex = cnamereq.rangeOfString("Comm.")
+        cnamereq.replaceRange(stringindex!, with: "comm.")
+        println("cnamereq is \(cnamereq)")
+    }
+    
     
     //var ac :UIActivityIndicatorView?
     if(view != nil){
@@ -38,12 +43,19 @@ func sendProtobufMsg(msgReq:GeneratedMessageBuilder,msgReply:GeneratedMessageBui
         }
         
         if isOK {
-            var start:String.Index = advance(cnamereq.startIndex, 5)
+            var start:String.Index = advance(cnamereq.startIndex, 0)
             var end:String.Index = advance(cnamereq.endIndex, -3)
             let range = Range(start:start,end:end)
             var cnamereply = cnamereq.substringWithRange(range)
-            
             cnamereply += "Reply"
+            
+            println("cnamereply is \(cnamereply) vs \(msgReply.internalGetResult.classMetaType().className())")
+
+            if cnamereply.hasPrefix("comm."){
+                var stringindex = cnamereply.rangeOfString("comm.")
+                cnamereply.replaceRange(stringindex!, with: "Comm.")
+                println("cnamereply is \(cnamereply)")
+            }
             
             if(msgReply.internalGetResult.classMetaType().className() == cnamereply)
             {

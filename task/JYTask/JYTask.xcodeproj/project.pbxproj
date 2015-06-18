@@ -27,7 +27,7 @@
 		5F1E443519FF56FA0024D285 /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E443419FF56FA0024D285 /* UIImageView+Additions.swift */; };
 		5F1E443719FF6AF70024D285 /* FileManagerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E443619FF6AF70024D285 /* FileManagerUtil.swift */; };
 		5F21C68D1A1AEEBA005F4E9B /* OCWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F21C68C1A1AEEBA005F4E9B /* OCWrap.mm */; };
-		5F36E5081B32453C00F4D859 /* libcpphonemodule.a.zip in Resources */ = {isa = PBXBuildFile; fileRef = 5F36E5071B32453C00F4D859 /* libcpphonemodule.a.zip */; };
+		5F36E5111B3248D800F4D859 /* libcpphonemodule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F36E5101B3248D800F4D859 /* libcpphonemodule.a */; };
 		5F3CC9F31A0C9CBF0022460D /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3CC9F21A0C9CBF0022460D /* SCLAlertView.swift */; };
 		5F4A5D5319FDC86B00BDA85B /* UIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4A5D5219FDC86B00BDA85B /* UIUtil.swift */; };
 		5F4A5D5719FDD6B200BDA85B /* ResetPasswordOKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4A5D5619FDD6B200BDA85B /* ResetPasswordOKViewController.swift */; };
@@ -146,7 +146,7 @@
 		5F1E443619FF6AF70024D285 /* FileManagerUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerUtil.swift; sourceTree = "<group>"; };
 		5F21C68B1A1AEEA4005F4E9B /* cppwrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cppwrap.h; sourceTree = "<group>"; };
 		5F21C68C1A1AEEBA005F4E9B /* OCWrap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCWrap.mm; sourceTree = "<group>"; };
-		5F36E5071B32453C00F4D859 /* libcpphonemodule.a.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = libcpphonemodule.a.zip; path = ioslibs/libcpphonemodule.a.zip; sourceTree = "<group>"; };
+		5F36E5101B3248D800F4D859 /* libcpphonemodule.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcpphonemodule.a; path = ioslibs/libcpphonemodule.a; sourceTree = "<group>"; };
 		5F3CC9F21A0C9CBF0022460D /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		5F4A5D5219FDC86B00BDA85B /* UIUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtil.swift; sourceTree = "<group>"; };
 		5F4A5D5619FDD6B200BDA85B /* ResetPasswordOKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordOKViewController.swift; sourceTree = "<group>"; };
@@ -237,6 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F36E5111B3248D800F4D859 /* libcpphonemodule.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +373,7 @@
 		5F5CFFA319F7368800DB382F = {
 			isa = PBXGroup;
 			children = (
-				5F36E5071B32453C00F4D859 /* libcpphonemodule.a.zip */,
+				5F36E5101B3248D800F4D859 /* libcpphonemodule.a */,
 				5FA25A611A14741400610F42 /* libc++.dylib */,
 				5FF150A01A0210000038F21A /* global */,
 				5F5CFFAE19F7368800DB382F /* JYTask */,
@@ -591,7 +592,6 @@
 			files = (
 				5FB2898A1A01C7960026DFE1 /* Main.storyboard in Resources */,
 				5FEDAD771A63AC4B00709020 /* Images.xcassets in Resources */,
-				5F36E5081B32453C00F4D859 /* libcpphonemodule.a.zip in Resources */,
 				5F16F5FE1A5114AA003A6B51 /* Adv.storyboard in Resources */,
 				5F16F6051A5114BF003A6B51 /* Task.storyboard in Resources */,
 				5F8E9C8B1A1DCC8D0002B844 /* left_arrow@2x.png in Resources */,
@@ -888,7 +888,10 @@
 				INFOPLIST_FILE = JYTask/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ioslibs",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7c6119a1-e69c-4fcf-9aeb-d5f836a0bc8e";
@@ -909,7 +912,10 @@
 				INFOPLIST_FILE = JYTask/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ioslibs",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "简软任务";
 				PROVISIONING_PROFILE = "7c6119a1-e69c-4fcf-9aeb-d5f836a0bc8e";
