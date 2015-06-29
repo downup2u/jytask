@@ -793,7 +793,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onClickSelDate:" destination="OeK-TV-fj6" eventType="touchUpInside" id="8pI-V1-p8X"/>
                                     <action selector="onClickSelMember:" destination="OeK-TV-fj6" eventType="touchUpInside" id="4xA-JN-sfL"/>
                                 </connections>
                             </button>
