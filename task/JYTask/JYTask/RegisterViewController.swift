@@ -18,24 +18,6 @@ class RegisterViewController: UIViewController {
 
         addButtonCorner_OK(btnOK)
         // Do any additional setup after loading the view.
-        var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
     }
     
     @IBOutlet weak var btnOK: UIButton!
@@ -81,8 +63,7 @@ class RegisterViewController: UIViewController {
                 }
                 
                 if(bError){
-                    SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-
+                     showError("", errString)
                 }
                 
             })
@@ -121,8 +102,7 @@ class RegisterViewController: UIViewController {
                 }
                 
                 if(bError){
-                    SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-
+                    showError("", errString)
                 }
                 
             })

@@ -12,26 +12,6 @@ class MyInfoCreateOrAddCompanyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-        // Do any additional setup after loading the view.
-        var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
     }
 
 
@@ -74,12 +54,9 @@ class MyInfoCreateOrAddCompanyViewController: UIViewController {
                     NSNotificationCenter.defaultCenter().postNotificationName(ONGETMSGREFRESHDATA, object: "companyinfo")
                     GlobalMsgReqUtil.shared.sendGroupUserReq()
                     var okString = "加入组织成功"
-                    var closeStr:String = NSLocalizedString("OK", comment:"确定")
-//                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction(okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                    })
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
+
                     
                 }
                 else{
@@ -93,8 +70,7 @@ class MyInfoCreateOrAddCompanyViewController: UIViewController {
                 errString = err!
             }
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                
+                    showError("", errString)
             }
         })
         
@@ -124,12 +100,9 @@ class MyInfoCreateOrAddCompanyViewController: UIViewController {
                     NSNotificationCenter.defaultCenter().postNotificationName(ONGETMSGREFRESHDATA, object: "companyinfo")
                     GlobalMsgReqUtil.shared.sendGroupUserReq()
                     var okString = "新建组织成功"
-                    var closeStr:String = NSLocalizedString("OK", comment:"确定")
-//                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction(self, title:"", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                    })
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
+
 
                 }
                 else{
@@ -143,8 +116,7 @@ class MyInfoCreateOrAddCompanyViewController: UIViewController {
                 errString = err!
             }
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                
+                     showError("", errString)                
             }
         })
         

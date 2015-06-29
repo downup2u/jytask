@@ -167,12 +167,9 @@ class TaskDetailViewController: UIViewController {
                 if(msgReply.issuccess){
                     GlobalMsgReqUtil.shared.sendNotifyReq(Comm.EnUpdatedFlag.UfMytask.rawValue|Comm.EnUpdatedFlag.UfMytaskfinishednumbers.rawValue)
                     var okString = "删除任务\(self.taskinfo.name)成功"
-                    var closeStr:String = NSLocalizedString("OK", comment:"确定")
-                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction("", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                    })
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
+
 
                     
                 }
@@ -311,12 +308,8 @@ class TaskDetailViewController: UIViewController {
                 if(msgReply.issuccess){
                     GlobalMsgReqUtil.shared.sendNotifyReq(Comm.EnUpdatedFlag.UfMytask.rawValue|Comm.EnUpdatedFlag.UfMytaskfinishednumbers.rawValue)
                     var okString = "接受任务\(self.taskinfo.name)成功"
-                    var closeStr:String = NSLocalizedString("OK", comment:"确定")
-                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction(self, title:"", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                    })
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
                     return;
                     
                 }
@@ -331,8 +324,7 @@ class TaskDetailViewController: UIViewController {
                 errString = err!
             }
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                
+                    showError("", errString)                
             }
         })
 

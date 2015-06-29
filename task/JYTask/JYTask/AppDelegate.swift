@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         // setAppviewAsRootView
+        IQKeyboardManager.sharedManager().enable = true
+        
         var sIn:String = documentsDir()
         var dbname = Globals.shared.urlWebService.md5
         sIn += "/\(dbname)_v2"

@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		5F018AA91A5B76D0004B0854 /* StringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F018AA81A5B76D0004B0854 /* StringHash.swift */; };
 		5F07D0631A4A76880078C771 /* TaskDetailInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F07D0621A4A76880078C771 /* TaskDetailInfo.swift */; };
+		5F0B726E1B40DAA1004F7FDC /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B726D1B40DAA1004F7FDC /* DatePickerDialog.swift */; };
 		5F10C3401A09FF100092C175 /* GlobalMsgReqUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10C33F1A09FF100092C175 /* GlobalMsgReqUtil.swift */; };
 		5F16F5F71A511496003A6B51 /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F16F5F91A511496003A6B51 /* MyProfile.storyboard */; };
 		5F16F5FE1A5114AA003A6B51 /* Adv.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F16F6001A5114AA003A6B51 /* Adv.storyboard */; };
 		5F16F6051A5114BF003A6B51 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F16F6071A5114BF003A6B51 /* Task.storyboard */; };
-		5F16F60C1A511607003A6B51 /* TaskControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F16F60E1A511607003A6B51 /* TaskControl.storyboard */; };
 		5F16F6151A5116F2003A6B51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F16F6171A5116F2003A6B51 /* Localizable.strings */; };
 		5F1A29551A6F777600E53B23 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1A29541A6F777600E53B23 /* LoadingView.swift */; };
 		5F1B78B219F9F930007719F9 /* TaskChooseMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1B78B119F9F930007719F9 /* TaskChooseMembersViewController.swift */; };
@@ -55,8 +55,6 @@
 		5F5C002B19F7380F00DB382F /* MyInfoCreateOrAddCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CFFF419F7380F00DB382F /* MyInfoCreateOrAddCompanyViewController.swift */; };
 		5F5C002C19F7380F00DB382F /* MyInfoInvitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CFFF519F7380F00DB382F /* MyInfoInvitionViewController.swift */; };
 		5F5C002D19F7380F00DB382F /* MyInfoUpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CFFF619F7380F00DB382F /* MyInfoUpdatePasswordViewController.swift */; };
-		5F5C002E19F7380F00DB382F /* PopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CFFF719F7380F00DB382F /* PopDatePicker.swift */; };
-		5F5C002F19F7380F00DB382F /* PopDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CFFF819F7380F00DB382F /* PopDateViewController.swift */; };
 		5F5C003019F7380F00DB382F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CFFF919F7380F00DB382F /* RegisterViewController.swift */; };
 		5F5C003119F7380F00DB382F /* ResetPassordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CFFFA19F7380F00DB382F /* ResetPassordViewController.swift */; };
 		5F5C003219F7380F00DB382F /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CFFFB19F7380F00DB382F /* RootNavigationViewController.swift */; };
@@ -84,16 +82,30 @@
 		5F8E9C681A1DB2010002B844 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E9C641A1DB2010002B844 /* KeyboardManager.swift */; };
 		5F8E9C691A1DB2010002B844 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E9C651A1DB2010002B844 /* StringExtension.swift */; };
 		5F8E9C6A1A1DB2010002B844 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E9C661A1DB2010002B844 /* UIViewExtension.swift */; };
-		5F8E9C891A1DCC8D0002B844 /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E9C831A1DCC8D0002B844 /* CKCalendarView.m */; };
-		5F8E9C8A1A1DCC8D0002B844 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E9C851A1DCC8D0002B844 /* left_arrow.png */; };
-		5F8E9C8B1A1DCC8D0002B844 /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E9C861A1DCC8D0002B844 /* left_arrow@2x.png */; };
-		5F8E9C8C1A1DCC8D0002B844 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E9C871A1DCC8D0002B844 /* right_arrow.png */; };
-		5F8E9C8D1A1DCC8D0002B844 /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E9C881A1DCC8D0002B844 /* right_arrow@2x.png */; };
 		5F97E75E1A2EA6D600AEC1A6 /* TaskDenyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F97E75D1A2EA6D600AEC1A6 /* TaskDenyViewController.swift */; };
 		5FA9378119F8995A00FE174E /* TaskAllFinishedTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9378019F8995A00FE174E /* TaskAllFinishedTaskViewController.swift */; };
 		5FA9FE251A01C5320059E553 /* UIIndicatorView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9FE241A01C5320059E553 /* UIIndicatorView+Extension.swift */; };
 		5FB2898A1A01C7960026DFE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CFFB519F7368800DB382F /* Main.storyboard */; };
 		5FB2898C1A01CDEC0026DFE1 /* MsgUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB2898B1A01CDEC0026DFE1 /* MsgUtil.swift */; };
+		5FC3ED281B4104A70079D6F9 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED171B4104A70079D6F9 /* IQNSArray+Sort.swift */; };
+		5FC3ED291B4104A70079D6F9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED181B4104A70079D6F9 /* IQUIView+Hierarchy.swift */; };
+		5FC3ED2A1B4104A70079D6F9 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED191B4104A70079D6F9 /* IQUIWindow+Hierarchy.swift */; };
+		5FC3ED2B1B4104A70079D6F9 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED1B1B4104A70079D6F9 /* IQKeyboardManagerConstants.swift */; };
+		5FC3ED2C1B4104A70079D6F9 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED1C1B4104A70079D6F9 /* IQKeyboardManagerConstantsInternal.swift */; };
+		5FC3ED2D1B4104A70079D6F9 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED1D1B4104A70079D6F9 /* IQKeyboardManager.swift */; };
+		5FC3ED2E1B4104A70079D6F9 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED1E1B4104A70079D6F9 /* IQKeyboardReturnKeyHandler.swift */; };
+		5FC3ED2F1B4104A70079D6F9 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED201B4104A70079D6F9 /* IQTextView.swift */; };
+		5FC3ED301B4104A70079D6F9 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED221B4104A70079D6F9 /* IQBarButtonItem.swift */; };
+		5FC3ED311B4104A70079D6F9 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED231B4104A70079D6F9 /* IQTitleBarButtonItem.swift */; };
+		5FC3ED321B4104A70079D6F9 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED241B4104A70079D6F9 /* IQToolbar.swift */; };
+		5FC3ED331B4104A70079D6F9 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED251B4104A70079D6F9 /* IQUIView+IQKeyboardToolbar.swift */; };
+		5FC3ED341B4104A70079D6F9 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5FC3ED271B4104A70079D6F9 /* IQKeyboardManager.bundle */; };
+		5FC3ED401B4107660079D6F9 /* AlternativeDesign.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FC3ED361B4107660079D6F9 /* AlternativeDesign.json */; };
+		5FC3ED411B4107660079D6F9 /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED381B4107660079D6F9 /* HexColor.m */; };
+		5FC3ED421B4107660079D6F9 /* TSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED3A1B4107660079D6F9 /* TSBlurView.m */; };
+		5FC3ED431B4107660079D6F9 /* TSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED3C1B4107660079D6F9 /* TSMessage.m */; };
+		5FC3ED441B4107660079D6F9 /* TSMessagesDefaultDesign.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FC3ED3D1B4107660079D6F9 /* TSMessagesDefaultDesign.json */; };
+		5FC3ED451B4107660079D6F9 /* TSMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3ED3F1B4107660079D6F9 /* TSMessageView.m */; };
 		5FCDF6E71A0DA30B002272E2 /* GlobalTaskDataWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCDF6E61A0DA30B002272E2 /* GlobalTaskDataWrap.swift */; };
 		5FEDAD771A63AC4B00709020 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FEDAD761A63AC4B00709020 /* Images.xcassets */; };
 		5FF2FADD1A2FF555009761E3 /* CustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2FADB1A2FF555009761E3 /* CustomBadge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -113,6 +125,7 @@
 /* Begin PBXFileReference section */
 		5F018AA81A5B76D0004B0854 /* StringHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHash.swift; sourceTree = "<group>"; };
 		5F07D0621A4A76880078C771 /* TaskDetailInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailInfo.swift; sourceTree = "<group>"; };
+		5F0B726D1B40DAA1004F7FDC /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		5F10C33F1A09FF100092C175 /* GlobalMsgReqUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalMsgReqUtil.swift; sourceTree = "<group>"; };
 		5F16F5EF1A5113A6003A6B51 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		5F16F5F01A5113A6003A6B51 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -126,9 +139,6 @@
 		5F16F6061A5114BF003A6B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Task.storyboard; sourceTree = "<group>"; };
 		5F16F6091A5114C2003A6B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Task.strings; sourceTree = "<group>"; };
 		5F16F60B1A5114C8003A6B51 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Task.strings"; sourceTree = "<group>"; };
-		5F16F60D1A511607003A6B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TaskControl.storyboard; sourceTree = "<group>"; };
-		5F16F6101A51160A003A6B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TaskControl.strings; sourceTree = "<group>"; };
-		5F16F6121A51160E003A6B51 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TaskControl.strings"; sourceTree = "<group>"; };
 		5F16F6161A5116F2003A6B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F16F6181A5116F5003A6B51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F16F6191A5116F6003A6B51 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -186,8 +196,6 @@
 		5F5CFFF419F7380F00DB382F /* MyInfoCreateOrAddCompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInfoCreateOrAddCompanyViewController.swift; sourceTree = "<group>"; };
 		5F5CFFF519F7380F00DB382F /* MyInfoInvitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInfoInvitionViewController.swift; sourceTree = "<group>"; };
 		5F5CFFF619F7380F00DB382F /* MyInfoUpdatePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInfoUpdatePasswordViewController.swift; sourceTree = "<group>"; };
-		5F5CFFF719F7380F00DB382F /* PopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDatePicker.swift; sourceTree = "<group>"; };
-		5F5CFFF819F7380F00DB382F /* PopDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDateViewController.swift; sourceTree = "<group>"; };
 		5F5CFFF919F7380F00DB382F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5F5CFFFA19F7380F00DB382F /* ResetPassordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPassordViewController.swift; sourceTree = "<group>"; };
 		5F5CFFFB19F7380F00DB382F /* RootNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationViewController.swift; sourceTree = "<group>"; };
@@ -210,12 +218,6 @@
 		5F8E9C641A1DB2010002B844 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		5F8E9C651A1DB2010002B844 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		5F8E9C661A1DB2010002B844 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		5F8E9C821A1DCC8D0002B844 /* CKCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCalendarView.h; sourceTree = "<group>"; };
-		5F8E9C831A1DCC8D0002B844 /* CKCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKCalendarView.m; sourceTree = "<group>"; };
-		5F8E9C851A1DCC8D0002B844 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
-		5F8E9C861A1DCC8D0002B844 /* left_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_arrow@2x.png"; sourceTree = "<group>"; };
-		5F8E9C871A1DCC8D0002B844 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
-		5F8E9C881A1DCC8D0002B844 /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_arrow@2x.png"; sourceTree = "<group>"; };
 		5F97E75D1A2EA6D600AEC1A6 /* TaskDenyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDenyViewController.swift; sourceTree = "<group>"; };
 		5FA25A611A14741400610F42 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		5FA755331A142BE0000A3BFE /* JYTask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JYTask-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -223,9 +225,31 @@
 		5FA9378019F8995A00FE174E /* TaskAllFinishedTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskAllFinishedTaskViewController.swift; sourceTree = "<group>"; };
 		5FA9FE241A01C5320059E553 /* UIIndicatorView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIIndicatorView+Extension.swift"; sourceTree = "<group>"; };
 		5FB2898B1A01CDEC0026DFE1 /* MsgUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgUtil.swift; sourceTree = "<group>"; };
+		5FC3ED171B4104A70079D6F9 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		5FC3ED181B4104A70079D6F9 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		5FC3ED191B4104A70079D6F9 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		5FC3ED1B1B4104A70079D6F9 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		5FC3ED1C1B4104A70079D6F9 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		5FC3ED1D1B4104A70079D6F9 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		5FC3ED1E1B4104A70079D6F9 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		5FC3ED201B4104A70079D6F9 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		5FC3ED221B4104A70079D6F9 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		5FC3ED231B4104A70079D6F9 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		5FC3ED241B4104A70079D6F9 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		5FC3ED251B4104A70079D6F9 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		5FC3ED271B4104A70079D6F9 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		5FC3ED361B4107660079D6F9 /* AlternativeDesign.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AlternativeDesign.json; sourceTree = "<group>"; };
+		5FC3ED371B4107660079D6F9 /* HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColor.h; sourceTree = "<group>"; };
+		5FC3ED381B4107660079D6F9 /* HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColor.m; sourceTree = "<group>"; };
+		5FC3ED391B4107660079D6F9 /* TSBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBlurView.h; sourceTree = "<group>"; };
+		5FC3ED3A1B4107660079D6F9 /* TSBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBlurView.m; sourceTree = "<group>"; };
+		5FC3ED3B1B4107660079D6F9 /* TSMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMessage.h; sourceTree = "<group>"; };
+		5FC3ED3C1B4107660079D6F9 /* TSMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMessage.m; sourceTree = "<group>"; };
+		5FC3ED3D1B4107660079D6F9 /* TSMessagesDefaultDesign.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TSMessagesDefaultDesign.json; sourceTree = "<group>"; };
+		5FC3ED3E1B4107660079D6F9 /* TSMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMessageView.h; sourceTree = "<group>"; };
+		5FC3ED3F1B4107660079D6F9 /* TSMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMessageView.m; sourceTree = "<group>"; };
 		5FCDF6E61A0DA30B002272E2 /* GlobalTaskDataWrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTaskDataWrap.swift; sourceTree = "<group>"; };
 		5FEDAD761A63AC4B00709020 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5FEDAD781A63B4AC00709020 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../../Default-568h@2x.png"; sourceTree = "<group>"; };
 		5FF2FAD71A2FF53A009761E3 /* MESegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MESegmentedControl.h; sourceTree = "<group>"; };
 		5FF2FADA1A2FF555009761E3 /* CustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBadge.h; sourceTree = "<group>"; };
 		5FF2FADB1A2FF555009761E3 /* CustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBadge.m; sourceTree = "<group>"; };
@@ -269,12 +293,9 @@
 				5FF2FADA1A2FF555009761E3 /* CustomBadge.h */,
 				5FF2FADB1A2FF555009761E3 /* CustomBadge.m */,
 				5FF2FADC1A2FF555009761E3 /* MESegmentedControl.m */,
-				5F8E9C7F1A1DCBA50002B844 /* CalendarCtrl */,
 				5F3CC9F21A0C9CBF0022460D /* SCLAlertView.swift */,
 				5F5CFFEB19F7380F00DB382F /* Import4Control.swift */,
-				5F5CFFF719F7380F00DB382F /* PopDatePicker.swift */,
-				5FEDAD781A63B4AC00709020 /* Default-568h@2x.png */,
-				5F5CFFF819F7380F00DB382F /* PopDateViewController.swift */,
+				5F0B726D1B40DAA1004F7FDC /* DatePickerDialog.swift */,
 				5F5CFFD519F7380F00DB382F /* Import4.xib */,
 				5F4A5D5219FDC86B00BDA85B /* UIUtil.swift */,
 				5F1E442C19FF2B850024D285 /* UIImage+Extension.swift */,
@@ -295,7 +316,6 @@
 				5F16F5F91A511496003A6B51 /* MyProfile.storyboard */,
 				5F5CFFB519F7368800DB382F /* Main.storyboard */,
 				5F16F6071A5114BF003A6B51 /* Task.storyboard */,
-				5F16F60E1A511607003A6B51 /* TaskControl.storyboard */,
 			);
 			name = storyboard;
 			sourceTree = "<group>";
@@ -463,6 +483,8 @@
 		5F8E9C601A1DB1F40002B844 /* keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				5FC3ED351B4107660079D6F9 /* Classes */,
+				5FC3ED151B4104A70079D6F9 /* IQKeybordManagerSwift */,
 				5F607A701A28660800DCB923 /* KeyboardTableView.swift */,
 				5F8E9C631A1DB2010002B844 /* DeviceInfo.swift */,
 				5F8E9C641A1DB2010002B844 /* KeyboardManager.swift */,
@@ -472,25 +494,81 @@
 			name = keyboard;
 			sourceTree = "<group>";
 		};
-		5F8E9C7F1A1DCBA50002B844 /* CalendarCtrl */ = {
+		5FC3ED151B4104A70079D6F9 /* IQKeybordManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				5F8E9C821A1DCC8D0002B844 /* CKCalendarView.h */,
-				5F8E9C831A1DCC8D0002B844 /* CKCalendarView.m */,
-				5F8E9C841A1DCC8D0002B844 /* resources */,
+				5FC3ED161B4104A70079D6F9 /* Categories */,
+				5FC3ED1A1B4104A70079D6F9 /* Constants */,
+				5FC3ED1D1B4104A70079D6F9 /* IQKeyboardManager.swift */,
+				5FC3ED1E1B4104A70079D6F9 /* IQKeyboardReturnKeyHandler.swift */,
+				5FC3ED1F1B4104A70079D6F9 /* IQTextView */,
+				5FC3ED211B4104A70079D6F9 /* IQToolbar */,
+				5FC3ED261B4104A70079D6F9 /* Resources */,
 			);
-			name = CalendarCtrl;
+			path = IQKeybordManagerSwift;
 			sourceTree = "<group>";
 		};
-		5F8E9C841A1DCC8D0002B844 /* resources */ = {
+		5FC3ED161B4104A70079D6F9 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				5F8E9C851A1DCC8D0002B844 /* left_arrow.png */,
-				5F8E9C861A1DCC8D0002B844 /* left_arrow@2x.png */,
-				5F8E9C871A1DCC8D0002B844 /* right_arrow.png */,
-				5F8E9C881A1DCC8D0002B844 /* right_arrow@2x.png */,
+				5FC3ED171B4104A70079D6F9 /* IQNSArray+Sort.swift */,
+				5FC3ED181B4104A70079D6F9 /* IQUIView+Hierarchy.swift */,
+				5FC3ED191B4104A70079D6F9 /* IQUIWindow+Hierarchy.swift */,
 			);
-			path = resources;
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5FC3ED1A1B4104A70079D6F9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5FC3ED1B1B4104A70079D6F9 /* IQKeyboardManagerConstants.swift */,
+				5FC3ED1C1B4104A70079D6F9 /* IQKeyboardManagerConstantsInternal.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5FC3ED1F1B4104A70079D6F9 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				5FC3ED201B4104A70079D6F9 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		5FC3ED211B4104A70079D6F9 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				5FC3ED221B4104A70079D6F9 /* IQBarButtonItem.swift */,
+				5FC3ED231B4104A70079D6F9 /* IQTitleBarButtonItem.swift */,
+				5FC3ED241B4104A70079D6F9 /* IQToolbar.swift */,
+				5FC3ED251B4104A70079D6F9 /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		5FC3ED261B4104A70079D6F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5FC3ED271B4104A70079D6F9 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5FC3ED351B4107660079D6F9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5FC3ED361B4107660079D6F9 /* AlternativeDesign.json */,
+				5FC3ED371B4107660079D6F9 /* HexColor.h */,
+				5FC3ED381B4107660079D6F9 /* HexColor.m */,
+				5FC3ED391B4107660079D6F9 /* TSBlurView.h */,
+				5FC3ED3A1B4107660079D6F9 /* TSBlurView.m */,
+				5FC3ED3B1B4107660079D6F9 /* TSMessage.h */,
+				5FC3ED3C1B4107660079D6F9 /* TSMessage.m */,
+				5FC3ED3D1B4107660079D6F9 /* TSMessagesDefaultDesign.json */,
+				5FC3ED3E1B4107660079D6F9 /* TSMessageView.h */,
+				5FC3ED3F1B4107660079D6F9 /* TSMessageView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		5FF150A01A0210000038F21A /* global */ = {
@@ -594,19 +672,17 @@
 				5FEDAD771A63AC4B00709020 /* Images.xcassets in Resources */,
 				5F16F5FE1A5114AA003A6B51 /* Adv.storyboard in Resources */,
 				5F16F6051A5114BF003A6B51 /* Task.storyboard in Resources */,
-				5F8E9C8B1A1DCC8D0002B844 /* left_arrow@2x.png in Resources */,
-				5F8E9C8A1A1DCC8D0002B844 /* left_arrow.png in Resources */,
-				5F8E9C8D1A1DCC8D0002B844 /* right_arrow@2x.png in Resources */,
 				5F5C001119F7380F00DB382F /* taskdata.plist in Resources */,
 				5F1CF49F1AF8B420000A3A06 /* Default-568h@2x.png in Resources */,
 				5F5C001219F7380F00DB382F /* taskmyprofile.plist in Resources */,
-				5F8E9C8C1A1DCC8D0002B844 /* right_arrow.png in Resources */,
+				5FC3ED441B4107660079D6F9 /* TSMessagesDefaultDesign.json in Resources */,
 				5F5C000C19F7380F00DB382F /* Import4.xib in Resources */,
 				5F1CF4A01AF8B420000A3A06 /* Default@2x.png in Resources */,
+				5FC3ED341B4104A70079D6F9 /* IQKeyboardManager.bundle in Resources */,
 				5F5C001319F7380F00DB382F /* taskmyprofilesection.plist in Resources */,
 				5F16F5F71A511496003A6B51 /* MyProfile.storyboard in Resources */,
 				5F16F6151A5116F2003A6B51 /* Localizable.strings in Resources */,
-				5F16F60C1A511607003A6B51 /* TaskControl.storyboard in Resources */,
+				5FC3ED401B4107660079D6F9 /* AlternativeDesign.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,12 +701,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F5F5D3E1A90A06700D8432B /* AbstractMessage.swift in Sources */,
+				5FC3ED451B4107660079D6F9 /* TSMessageView.m in Sources */,
 				5F5F5D3F1A90A06700D8432B /* CodedInputStream.swift in Sources */,
+				5FC3ED2E1B4104A70079D6F9 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				5FC3ED2A1B4104A70079D6F9 /* IQUIWindow+Hierarchy.swift in Sources */,
+				5FC3ED301B4104A70079D6F9 /* IQBarButtonItem.swift in Sources */,
 				5F5F5D401A90A06700D8432B /* CodedOutputStream.swift in Sources */,
 				5F5F5D411A90A06700D8432B /* ConcreateExtensionField.swift in Sources */,
 				5F5F5D421A90A06700D8432B /* ExtendableMessage.swift in Sources */,
 				5F5F5D431A90A06700D8432B /* ExtensionRegistry.swift in Sources */,
 				5F5F5D441A90A06700D8432B /* Field.swift in Sources */,
+				5FC3ED2D1B4104A70079D6F9 /* IQKeyboardManager.swift in Sources */,
 				5F5F5D451A90A06700D8432B /* GeneratedMessage.swift in Sources */,
 				5F5F5D461A90A06700D8432B /* RingBuffer.swift in Sources */,
 				5F5F5D471A90A06700D8432B /* UnknownFieldSet.swift in Sources */,
@@ -641,17 +722,21 @@
 				5F21C68D1A1AEEBA005F4E9B /* OCWrap.mm in Sources */,
 				5F5C003219F7380F00DB382F /* RootNavigationViewController.swift in Sources */,
 				5F3CC9F31A0C9CBF0022460D /* SCLAlertView.swift in Sources */,
+				5FC3ED411B4107660079D6F9 /* HexColor.m in Sources */,
 				5F607A711A28660800DCB923 /* KeyboardTableView.swift in Sources */,
 				5F5C002319F7380F00DB382F /* LoginViewController.swift in Sources */,
 				5F5C002019F7380F00DB382F /* FinishRegisterViewController.swift in Sources */,
+				5FC3ED2F1B4104A70079D6F9 /* IQTextView.swift in Sources */,
 				5F97E75E1A2EA6D600AEC1A6 /* TaskDenyViewController.swift in Sources */,
+				5FC3ED331B4104A70079D6F9 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				5F5C002719F7380F00DB382F /* msgApi.swift in Sources */,
 				5F5C002919F7380F00DB382F /* MyInfoCompanyInfoAdminViewController.swift in Sources */,
-				5F8E9C891A1DCC8D0002B844 /* CKCalendarView.m in Sources */,
 				5F5C002419F7380F00DB382F /* MainAdvTableViewController.swift in Sources */,
 				5F5C001719F7380F00DB382F /* AppDelegate.swift in Sources */,
 				5F5C003519F7380F00DB382F /* TaskAllTaskViewController.swift in Sources */,
 				5F5C001F19F7380F00DB382F /* FindPasswordViewController.swift in Sources */,
+				5FC3ED421B4107660079D6F9 /* TSBlurView.m in Sources */,
+				5FC3ED431B4107660079D6F9 /* TSMessage.m in Sources */,
 				5F5C001519F7380F00DB382F /* ActiveAccountViewController.swift in Sources */,
 				5F5C003B19F7380F00DB382F /* TaskTodayTaskViewController.swift in Sources */,
 				5F5C002519F7380F00DB382F /* MainMyInfoTableViewController.swift in Sources */,
@@ -659,17 +744,22 @@
 				5F5C003619F7380F00DB382F /* TaskCoworkTaskViewController.swift in Sources */,
 				5F5C002A19F7380F00DB382F /* MyInfoCompanyMemberManagerViewController.swift in Sources */,
 				5F5C002D19F7380F00DB382F /* MyInfoUpdatePasswordViewController.swift in Sources */,
+				5FC3ED2C1B4104A70079D6F9 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				5F8E9C681A1DB2010002B844 /* KeyboardManager.swift in Sources */,
 				5F1CF49C1AF8A019000A3A06 /* Comm_Comm.pb.swift in Sources */,
 				5F5C002819F7380F00DB382F /* MyInfoAboutViewController.swift in Sources */,
 				5F018AA91A5B76D0004B0854 /* StringHash.swift in Sources */,
 				5F5C002219F7380F00DB382F /* Import4Control.swift in Sources */,
 				5FF2FADE1A2FF555009761E3 /* MESegmentedControl.m in Sources */,
+				5FC3ED291B4104A70079D6F9 /* IQUIView+Hierarchy.swift in Sources */,
 				5F5C003119F7380F00DB382F /* ResetPassordViewController.swift in Sources */,
 				5F5C006619F7745100DB382F /* TaskDelegate.swift in Sources */,
+				5FC3ED311B4104A70079D6F9 /* IQTitleBarButtonItem.swift in Sources */,
 				5F8E9C6A1A1DB2010002B844 /* UIViewExtension.swift in Sources */,
 				5F5C002619F7380F00DB382F /* MainTaskViewController.swift in Sources */,
 				5F10C3401A09FF100092C175 /* GlobalMsgReqUtil.swift in Sources */,
+				5F0B726E1B40DAA1004F7FDC /* DatePickerDialog.swift in Sources */,
+				5FC3ED2B1B4104A70079D6F9 /* IQKeyboardManagerConstants.swift in Sources */,
 				5F1E443519FF56FA0024D285 /* UIImageView+Additions.swift in Sources */,
 				5F5C002B19F7380F00DB382F /* MyInfoCreateOrAddCompanyViewController.swift in Sources */,
 				5F5C005F19F7410600DB382F /* TaskAddEditViewController.swift in Sources */,
@@ -681,17 +771,17 @@
 				5F1E443119FF50060024D285 /* AdvListViewController.swift in Sources */,
 				5FCDF6E71A0DA30B002272E2 /* GlobalTaskDataWrap.swift in Sources */,
 				5F5C001E19F7380F00DB382F /* DateHelper.swift in Sources */,
-				5F5C002E19F7380F00DB382F /* PopDatePicker.swift in Sources */,
 				5F8E9C671A1DB2010002B844 /* DeviceInfo.swift in Sources */,
 				5F07D0631A4A76880078C771 /* TaskDetailInfo.swift in Sources */,
+				5FC3ED281B4104A70079D6F9 /* IQNSArray+Sort.swift in Sources */,
 				5F5C002119F7380F00DB382F /* Globals.swift in Sources */,
 				5F1E443719FF6AF70024D285 /* FileManagerUtil.swift in Sources */,
+				5FC3ED321B4104A70079D6F9 /* IQToolbar.swift in Sources */,
 				5FF2FADD1A2FF555009761E3 /* CustomBadge.m in Sources */,
 				5F1B78B219F9F930007719F9 /* TaskChooseMembersViewController.swift in Sources */,
 				5F5502E21A4E6C1F0056AE8B /* TaskSort.swift in Sources */,
 				5F1A29551A6F777600E53B23 /* LoadingView.swift in Sources */,
 				5F1E442F19FF2CFD0024D285 /* UIColor+Extension.swift in Sources */,
-				5F5C002F19F7380F00DB382F /* PopDateViewController.swift in Sources */,
 				5FA9378119F8995A00FE174E /* TaskAllFinishedTaskViewController.swift in Sources */,
 				5F4A5D5319FDC86B00BDA85B /* UIUtil.swift in Sources */,
 				5FB2898C1A01CDEC0026DFE1 /* MsgUtil.swift in Sources */,
@@ -746,16 +836,6 @@
 				5F16F60B1A5114C8003A6B51 /* zh-Hans */,
 			);
 			name = Task.storyboard;
-			sourceTree = "<group>";
-		};
-		5F16F60E1A511607003A6B51 /* TaskControl.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F16F60D1A511607003A6B51 /* Base */,
-				5F16F6101A51160A003A6B51 /* en */,
-				5F16F6121A51160E003A6B51 /* zh-Hans */,
-			);
-			name = TaskControl.storyboard;
 			sourceTree = "<group>";
 		};
 		5F16F6171A5116F2003A6B51 /* Localizable.strings */ = {

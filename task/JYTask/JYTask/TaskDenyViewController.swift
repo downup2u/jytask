@@ -128,7 +128,7 @@ class TaskDenyViewController: UIViewController ,UITextViewDelegate{
     }
     @IBAction func onClickOK(sender: AnyObject) {
         if textReason.text == ""{
-            SCLAlertView().showNotice( "", subTitle: "拒绝理由不能为空", closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning( "", "拒绝理由不能为空")
             return
         }
         
@@ -167,12 +167,9 @@ class TaskDenyViewController: UIViewController ,UITextViewDelegate{
                 if(msgReply.issuccess){
                     GlobalMsgReqUtil.shared.sendNotifyReq(Comm.EnUpdatedFlag.UfMytask.rawValue|Comm.EnUpdatedFlag.UfMytaskfinishednumbers.rawValue)
                     var okString = "拒绝任务\(self.taskinfo.name)成功"
-                    var closeStr:String = NSLocalizedString("OK", comment:"确定")
-//                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction("", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                    })
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
+
                     return
                 }
                 else{
@@ -186,8 +183,7 @@ class TaskDenyViewController: UIViewController ,UITextViewDelegate{
                 errString = err!
             }
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                
+                     showError("", errString)               
             }
             self.btnOK.enabled = true
         })

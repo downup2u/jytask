@@ -19,24 +19,6 @@ class MyInfoUpdatePasswordViewController: UIViewController,UITextFieldDelegate {
         let revealButton2 = addSecureTextSwitcher(self.newpasswordField!,UIImage(named: "visible-text")!)
         revealButton2.addTarget(self, action: "didClickPasswordReveal2", forControlEvents: UIControlEvents.TouchUpInside)
 
-        var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,7 +45,7 @@ class MyInfoUpdatePasswordViewController: UIViewController,UITextFieldDelegate {
     @IBAction func onClickOK(sender: AnyObject) {
         if(count(newpasswordField.text) < 6){
             var errString:String = "密码必须大于6个字符"
-            SCLAlertView().showNotice("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("", errString)
             return
         }
         
@@ -86,11 +68,9 @@ class MyInfoUpdatePasswordViewController: UIViewController,UITextFieldDelegate {
                 if(msgReply.issuccess){
                     var okString = "修改密码成功"
                     var closeStr:String = NSLocalizedString("OK", comment:"确定")
-//                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction(self, title:"", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                    })
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
+
                     return
                 }
                 else{
@@ -104,8 +84,7 @@ class MyInfoUpdatePasswordViewController: UIViewController,UITextFieldDelegate {
                 errString = err!
             }
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                
+                    showError("", errString)                
             }
         })
 

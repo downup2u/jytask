@@ -17,24 +17,6 @@ class ActiveAccountViewController: UIViewController {
         addButtonCorner_OK(btnOK)
         addButtonCorner_Normal(btnResend)
         
-        var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches:Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
     }
 
     var phonenumber:String = ""
@@ -50,7 +32,7 @@ class ActiveAccountViewController: UIViewController {
      //   return
         if self.authcodeField.text.isEmpty
         {
-            SCLAlertView().showNotice("", subTitle: NSLocalizedString("AuthCodeNotNull", comment:"验证码不能为空"), closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("", NSLocalizedString("AuthCodeNotNull", comment:"验证码不能为空"))
             return
         }
         //发送CreateUser消息
@@ -84,7 +66,7 @@ class ActiveAccountViewController: UIViewController {
             }
             
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+                showError("", errString)
             }
 
         })
@@ -137,7 +119,7 @@ class ActiveAccountViewController: UIViewController {
             }
             
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+                showError("", errString)
             }
             
         })

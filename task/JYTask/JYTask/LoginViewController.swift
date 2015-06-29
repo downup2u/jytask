@@ -17,12 +17,12 @@ class LoginViewController: UIViewController {
     @IBAction func onClickLogin(sender: AnyObject) {
         if(count(accoutField.text) == 0){
             var errString:String = "账号不能为空"
-            SCLAlertView().showNotice("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("",errString)
             return
         }
         if(count(passwordField.text) == 0){
             var errString:String = "密码不能为空"
-            SCLAlertView().showNotice("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("", errString)
             return
         }
         var msgReq = Comm.PkgUserLoginReq.builder()
@@ -58,8 +58,7 @@ class LoginViewController: UIViewController {
             }
 
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-
+                    showError("", errString)
             }
 
         })
@@ -68,7 +67,7 @@ class LoginViewController: UIViewController {
 //        textField.resignFirstResponder()
 //        return false
 //    }
-    var keyboard:KeyboardManager!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -90,28 +89,11 @@ class LoginViewController: UIViewController {
         }
 
         if(Globals.shared.isLogoutAlert){
-            SCLAlertView().showNotice("",subTitle: "你已在别处登录", closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("","你已在别处登录")
             Globals.shared.isLogoutAlert = false
         }
         
-        var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
+
     }
     
    

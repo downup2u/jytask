@@ -248,8 +248,7 @@ class TaskAllTaskViewController: UIViewController,UITableViewDataSource,UITableV
                     errString = err!
                 }
                 if(bError){
-                    SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                    
+                     showError("", errString)                   
                 }
             })
         }

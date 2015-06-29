@@ -15,24 +15,6 @@ class MyInfoInvitionViewController: UIViewController {
 
         addButtonCorner_OK(btnInvition)
         // Do any additional setup after loading the view.
-        var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,7 +32,7 @@ class MyInfoInvitionViewController: UIViewController {
     @IBAction func onClickInvition(sender: AnyObject) {
        if self.accountField.text == ""
        {
-            SCLAlertView().showNotice( "", subTitle: "手机号不能为空", closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("", "手机号不能为空")
             return
        }
         var msgReq = Comm.PkgUserInvitionUserReq.builder()
@@ -69,14 +51,8 @@ class MyInfoInvitionViewController: UIViewController {
                 if(msgReply.issuccess){
 
                     var okString = "邀请用户成功"
-                    var closeStr:String = NSLocalizedString("OK", comment:"确定")
-                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction("", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                        
-//                    })
-                  
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
                     
                 }
                 else{
@@ -90,8 +66,7 @@ class MyInfoInvitionViewController: UIViewController {
                 errString = err!
             }
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                
+                     showError("", errString)                
             }
         })
 

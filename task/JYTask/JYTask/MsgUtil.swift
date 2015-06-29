@@ -49,12 +49,10 @@ func sendProtobufMsg(msgReq:GeneratedMessageBuilder,msgReply:GeneratedMessageBui
             var cnamereply = cnamereq.substringWithRange(range)
             cnamereply += "Reply"
             
-            println("cnamereply is \(cnamereply) vs \(msgReply.internalGetResult.classMetaType().className())")
 
             if cnamereply.hasPrefix("comm."){
                 var stringindex = cnamereply.rangeOfString("comm.")
                 cnamereply.replaceRange(stringindex!, with: "Comm.")
-                println("cnamereply is \(cnamereply)")
             }
             
             if(msgReply.internalGetResult.classMetaType().className() == cnamereply)
@@ -77,4 +75,51 @@ func sendProtobufMsg(msgReq:GeneratedMessageBuilder,msgReply:GeneratedMessageBui
         }
     })
     
+}
+
+func showError(message: String, subtitle: String?) {
+    var rootViewController:UIViewController = UIApplication.sharedApplication().keyWindow!.rootViewController!
+    TSMessage.showNotificationInViewController(
+        TSMessage.defaultViewController(),
+        title: message,
+        subtitle: subtitle,
+        image: nil,
+        type: TSMessageNotificationType.Error,
+        duration: 1,
+        callback: nil,
+        buttonTitle: nil,
+        buttonCallback: nil,
+        atPosition: TSMessageNotificationPosition.NavBarOverlay,
+        canBeDismissedByUser: true)
+}
+func showSuccess(message: String, subtitle: String?) {
+    var rootViewController:UIViewController = UIApplication.sharedApplication().keyWindow!.rootViewController!
+    TSMessage.showNotificationInViewController(
+        TSMessage.defaultViewController(),
+        title: message,
+        subtitle: subtitle,
+        image: nil,
+        type: TSMessageNotificationType.Success,
+        duration: 1,
+        callback: nil,
+        buttonTitle: nil,
+        buttonCallback: nil,
+        atPosition: TSMessageNotificationPosition.NavBarOverlay,
+        canBeDismissedByUser: true)
+}
+
+func showWarning(message: String, subtitle: String?) {
+    var rootViewController:UIViewController = UIApplication.sharedApplication().keyWindow!.rootViewController!
+    TSMessage.showNotificationInViewController(
+        TSMessage.defaultViewController(),
+        title: message,
+        subtitle: subtitle,
+        image: nil,
+        type: TSMessageNotificationType.Warning,
+        duration: 1,
+        callback: nil,
+        buttonTitle: nil,
+        buttonCallback: nil,
+        atPosition: TSMessageNotificationPosition.NavBarOverlay,
+        canBeDismissedByUser: true)
 }

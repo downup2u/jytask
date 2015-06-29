@@ -18,25 +18,7 @@ class FindPasswordViewController: UIViewController {
  
         addButtonCorner_OK(btnOK)
         var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
     }
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
-    }
-
 
     @IBAction func onClickReturn(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
@@ -53,7 +35,7 @@ class FindPasswordViewController: UIViewController {
      //   return
         if(count(phonenumberField.text) == 0){
             var errString:String = "手机号不能为空"
-            SCLAlertView().showNotice("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("", errString)
             return
         }
         //findpasswordtoAuthSegue
@@ -88,8 +70,7 @@ class FindPasswordViewController: UIViewController {
                 }
                 
                 if(bError){
-                    SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-
+                    showError("", errString)
                 }
                 
             })

@@ -82,7 +82,7 @@ class MyInfoCompanyInfoAdminViewController: UIViewController,TaskUserChooseDeleg
     
     func onUserChoosed(userid:Int32,username:String){
         if(userid == 0){
-            SCLAlertView().showNotice("", subTitle: NSLocalizedString("SelectMember", comment:"请选择人员"), closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("", NSLocalizedString("SelectMember", comment:"请选择人员"))
             return
 
         }
@@ -106,7 +106,7 @@ class MyInfoCompanyInfoAdminViewController: UIViewController,TaskUserChooseDeleg
                     NSNotificationCenter.defaultCenter().postNotificationName(ONGETMSGREFRESHDATA, object: "memberrole")
                  //  self.navigationController?.popViewControllerAnimated(true)
                     var okString = "转移给\(username)成功"
-                    SCLAlertView().showSuccess("", subTitle: okString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+                    showSuccess("", okString)
                     
                     if Globals.shared.isAdmin() {
                         self.btnExit.hidden = true
@@ -138,8 +138,8 @@ class MyInfoCompanyInfoAdminViewController: UIViewController,TaskUserChooseDeleg
             }
 
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-           }
+                    showError("", errString)
+            }
             
         })
         
@@ -164,13 +164,10 @@ class MyInfoCompanyInfoAdminViewController: UIViewController,TaskUserChooseDeleg
                     NSNotificationCenter.defaultCenter().postNotificationName(ONGETMSGREFRESHDATA, object: "companyinfo")
                     
                     var okString = "解散组织成功"
-                    var closeStr:String = NSLocalizedString("OK", comment:"确定")
-//                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction("", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                    })
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
                     
+                
                 }
                 else{
                     errString = msgReply.err
@@ -184,7 +181,7 @@ class MyInfoCompanyInfoAdminViewController: UIViewController,TaskUserChooseDeleg
             }
             
             if(bError){
-                SCLAlertView().showError( "", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+                    showError("", errString)
             }
             
         })
@@ -214,12 +211,9 @@ class MyInfoCompanyInfoAdminViewController: UIViewController,TaskUserChooseDeleg
                     Globals.shared.exitCompany()
                     NSNotificationCenter.defaultCenter().postNotificationName(ONGETMSGREFRESHDATA, object: "companyinfo")
                     var okString = "退出组织成功"
-                    var closeStr:String = NSLocalizedString("OK", comment:"确定")
-//                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction("", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                    })
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
+
                    
                 }
                 else{
@@ -234,8 +228,7 @@ class MyInfoCompanyInfoAdminViewController: UIViewController,TaskUserChooseDeleg
             }
             
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                
+                    showError("", errString)
             }
             
         })

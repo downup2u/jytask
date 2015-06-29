@@ -22,24 +22,6 @@ class ResetPassordViewController: UIViewController {
         addButtonCorner_OK(btnOK)
         let revealButton = addSecureTextSwitcher(self.newpasswordField!,UIImage(named: "visible-text")!)
         revealButton.addTarget(self, action: "didClickPasswordReveal", forControlEvents: UIControlEvents.TouchUpInside)
-        var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
     }
     @IBAction func onClickReturn(sender: AnyObject) {
          navigationController?.popViewControllerAnimated(true)
@@ -57,7 +39,7 @@ class ResetPassordViewController: UIViewController {
     @IBAction func onClickOK(sender: AnyObject) {
         if(count(newpasswordField.text) < 6){
             var errString:String = "密码必须大于6个字符"
-            SCLAlertView().showNotice("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("", errString)
             return
         }
 
@@ -93,8 +75,7 @@ class ResetPassordViewController: UIViewController {
             }
             
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-
+                    showError("", errString)
             }
             
         })

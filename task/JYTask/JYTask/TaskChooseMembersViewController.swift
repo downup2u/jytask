@@ -28,24 +28,6 @@ class TaskChooseMembersViewController: UIViewController,UITableViewDataSource,UI
         refreshData()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "onDataChanged:", name: ONGETMSGREFRESHDATA, object: nil)
         
-         var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
     }
 
 
@@ -145,7 +127,6 @@ class TaskChooseMembersViewController: UIViewController,UITableViewDataSource,UI
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         var searchtext = searchBar.text
         doSearch(searchBar,searchtext:searchtext)
-        keyboard.endEditing()
     }
     
     

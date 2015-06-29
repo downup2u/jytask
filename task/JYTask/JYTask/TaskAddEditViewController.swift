@@ -18,14 +18,14 @@ enum TaskUIFlag:Int{
     case AssginUser = 2
 }
 
-class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITextFieldDelegate ,TaskChooseDelegate,TaskUserChooseDelegate, UITextViewDelegate{
+class TaskAddEditViewController: UIViewController, Import4ControlDelegate ,TaskChooseDelegate,TaskUserChooseDelegate{
 
-    var popDatePicker : PopDatePicker?
+
     
     @IBOutlet weak var taskContentField: UITextView!
     @IBOutlet weak var tasknameField: UITextField!
-    @IBOutlet weak var taskdateField:UITextField!
-    @IBOutlet weak var taskmemberField: UITextField!
+    @IBOutlet weak var btndatefield: UIButton!
+    @IBOutlet weak var btnmemberfield: UIButton!
   
     @IBOutlet weak var sortSeg: UISegmentedControl!
     @IBOutlet weak var ctrlImport4: Import4Control!
@@ -77,40 +77,20 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
         
         
         if((self.taskFlagUI & TaskUIFlag.AssginUser.rawValue) > 0){
-           self.taskmemberField.hidden = false
+           self.btnmemberfield.hidden = false
         }
         else{
-            self.taskmemberField.hidden = true
+            self.btnmemberfield.hidden = true
             
         }
         
 
         ctrlImport4.delegate = self
-        popDatePicker = PopDatePicker(sourceView: taskdateField)
-        popDatePicker!.setOnlyTodayAfter(true)
-        taskdateField.delegate = self
-        taskmemberField.delegate = self
+
+
         
         refreshData()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "onDataChanged:", name: ONGETMSGREFRESHDATA, object: nil)
-        var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
     }
 
     
@@ -198,7 +178,7 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
         self.btnSaveOK.enabled = false
         var  taskopttxt:String = ""
         if tasknameField.text == ""{
-            SCLAlertView().showNotice("", subTitle: "任务名不能为空", closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("", "任务名不能为空")
             return
         }
         var msgReq = Comm.PkgTaskOperationReq.builder()
@@ -230,13 +210,8 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
                     if(self.acceptuserid == 0){
                         GlobalMsgReqUtil.shared.sendNotifyReq(Comm.EnUpdatedFlag.UfMytask.rawValue|Comm.EnUpdatedFlag.UfMytaskfinishednumbers.rawValue);
                         var okString = "\(taskopttxt)任务\(self.tasknameField.text)成功"
-                        var closeStr:String = NSLocalizedString("OK", comment:"确定")
-//                        let alert = SCLAlertView()
-//                        alert.showTitleWithAction(self, title:"", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                            alert.hideView()
-//                            self.navigationController?.popViewControllerAnimated(true)
-//                            
-//                        })
+                        showSuccess("", okString)
+                        self.navigationController?.popViewControllerAnimated(true)
                         return
                     }
                     else{
@@ -255,7 +230,7 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
                 bError = true
                 errString = err!
             }
-            SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showError("", errString)
             self.btnSaveOK.enabled = true
 
             
@@ -287,12 +262,9 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
                   
                     GlobalMsgReqUtil.shared.sendNotifyReq(Comm.EnUpdatedFlag.UfMytask.rawValue|Comm.EnUpdatedFlag.UfMytaskfinishednumbers.rawValue);
                     var okString = "\(taskopttxt)任务\(self.tasknameField.text)成功"
-                    var closeStr:String = NSLocalizedString("OK", comment:"确定")
-//                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction("", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                    })
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
+
                     return
                 }
                 else{
@@ -305,7 +277,7 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
                 bError = true
                 errString = err!
             }
-            SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showError("", errString)
             self.btnSaveOK.enabled = true
         })
 
@@ -317,56 +289,49 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
     func onClickImport4BtnIndex(nSel:Int){
         println("TaskAddNewTaskViewController ctrlImport4 btn click:\(nSel)")
     }
+    @IBAction func onClickSelMember(sender: AnyObject) {
+        onClickSelMember()
+    }
     
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+    @IBAction func onClickSelDate(sender: AnyObject) {
+        var datetext = btndatefield.titleLabel?.text
         
-        if (textField === taskdateField) {
-            taskdateField.resignFirstResponder()
+        var initDate:NSDate?
+        if(datetext != ""){
             let formatter = NSDateFormatter()
             formatter.dateFormat = "yyyy-MM-dd"
-            var datetext = taskdateField.text
-            var initDate:NSDate?
-            if(datetext != ""){
-                initDate = formatter.dateFromString(datetext)
-            }
-
+            initDate = formatter.dateFromString(datetext!)
+        }
+        
+        
+        DatePickerDialog().show(title: "选择日期", doneButtonTitle: "完成", cancelButtonTitle: "取消", datePickerMode: .DateAndTime) {
+            (newDate) -> Void in
             
-            popDatePicker!.pick(self, initDate:initDate, dataChanged: { (newDate : NSDate, sourceView : UIView) -> () in
-                var taskdate = newDate.formatted("yyyy-MM-dd")
-                self.taskdateField.text = taskdate
-                var count = self.getDateCount(taskdate)
-                //新建时应该i <=，编辑时应该<
-                if(self.tasktype == TaskType.TaskAdd
-                    || self.tasktype == TaskType.TaskAddToEdit){
+            var taskdate = newDate.formatted("yyyy-MM-dd")
+            self.btndatefield.titleLabel?.text = taskdate
+            var count = self.getDateCount(taskdate)
+            //新建时应该i <=，编辑时应该<
+            if(self.tasktype == TaskType.TaskAdd
+                || self.tasktype == TaskType.TaskAddToEdit){
                     count = count + 1
+            }
+            
+            var curSel = count - 1
+            if(taskdate == self.taskinfo.taskdate){
+                curSel = self.taskinfo.sortflag == 0 ? 6:Int(self.taskinfo.sortflag) - 1
+            }
+            else{
+                if(self.tasktype == TaskType.TaskEdit){
+                    count = count + 1
+                    curSel = count - 1
                 }
-                
-                var curSel = count - 1
-                if(taskdate == self.taskinfo.taskdate){
-                    curSel = self.taskinfo.sortflag == 0 ? 6:Int(self.taskinfo.sortflag) - 1
-                }
-                else{
-                    if(self.tasktype == TaskType.TaskEdit){
-                        count = count + 1
-                        curSel = count - 1
-                    }
-                }
-                
-                self.taskWithSortFlag(count,curSel:curSel)
-
-                
-            })
-            return false
-        }
-        else if(textField == taskmemberField){
-            onClickSelMember()
-           
-            return false
-        }
-        else{
-            return true;
+            }
+            
+            self.taskWithSortFlag(count,curSel:curSel)
         }
     }
+    
+
     
     private func taskWithSortFlag(curdatecout:Int,curSel:Int){
         //curdatecount:current enabled,curSel:current Selected,from 0
@@ -391,7 +356,9 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
     }
     
     private func taskToUI(curdatecout:Int){
-        taskdateField.text = self.taskinfo.taskdate
+         self.btndatefield.titleLabel?.text  = self.taskinfo.taskdate
+        
+     
         tasknameField.text = self.taskinfo.name
         taskContentField.text =  self.taskinfo.content
         var curSel = 0
@@ -419,16 +386,15 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
         }
         self.ctrlImport4.setCurIndex(index)
 
-        taskdateField.text = self.taskinfo.taskdate
-        taskmemberField.text = self.taskinfo.acceptedrealname
+        self.btndatefield.titleLabel?.text  = self.taskinfo.taskdate
+        self.btnmemberfield.titleLabel?.text = self.taskinfo.acceptedrealname
         if(self.taskinfo.coworkid > 0 && self.taskinfo.status == Comm.PkgTaskInfo.EnTaskStatus.TsGoing){
             tasknameField.enabled = false
             taskContentField.editable  = false
-            taskmemberField.enabled = false
+            self.btnmemberfield.enabled = false
             taskContentField.backgroundColor = UIColor.colorWithHex("#CCCCCC")!
             tasknameField.backgroundColor = UIColor.colorWithHex("#CCCCCC")!
-            taskmemberField.backgroundColor = UIColor.colorWithHex("#CCCCCC")!
-        }
+         }
     }
     
     
@@ -452,7 +418,7 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
             taskbuilder.tasklevel = Comm.PkgTaskInfo.EnTaskLevel.TlNotimportanceNotargency
             
         }
-        taskbuilder.taskdate = taskdateField.text
+        taskbuilder.taskdate =  self.btndatefield.titleLabel!.text!
         taskbuilder.accepteduserid = acceptuserid
         self.taskinfo = taskbuilder.build()
     }
@@ -479,11 +445,11 @@ class TaskAddEditViewController: UIViewController, Import4ControlDelegate, UITex
     
     func onUserChoosed(userid:Int32,username:String){
         if(userid == 0){
-            SCLAlertView().showNotice( "", subTitle: NSLocalizedString("SelectMember", comment:"请选择人员"), closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning( "", NSLocalizedString("SelectMember", comment:"请选择人员"))
             return
             
         }
-        taskmemberField.text = username
+        self.btnmemberfield.titleLabel?.text = username
         self.acceptuserid = userid
     }
     func onClickSelMember() {

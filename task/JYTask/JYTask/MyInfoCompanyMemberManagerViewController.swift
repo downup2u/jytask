@@ -53,24 +53,6 @@ class MyInfoCompanyMemberManagerViewController: UIViewController ,UITableViewDat
         self.searchBar.delegate = self
         self.searchBar.placeholder = "请输入要搜索的人员姓名"
 
-        var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
     }
 
 
@@ -201,7 +183,7 @@ class MyInfoCompanyMemberManagerViewController: UIViewController ,UITableViewDat
     @IBAction func onDeleteButtonClicked(sender: AnyObject) {
         
         if self.selArrayUsers.count == 0{
-            SCLAlertView().showNotice("", subTitle: "至少选中一名成员", closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
+            showWarning("","至少选中一名成员")
             return
         }
         let alert = SCLAlertView()
@@ -232,13 +214,9 @@ class MyInfoCompanyMemberManagerViewController: UIViewController ,UITableViewDat
                     GlobalMsgReqUtil.shared.sendGroupUserReq()
                     NSNotificationCenter.defaultCenter().postNotificationName(ONGETMSGREFRESHDATA, object: "companyinfo")
                     var okString = "删除组织成员成功"
+                    showSuccess("", okString)
+                    self.navigationController?.popViewControllerAnimated(true)
 
-                    var closeStr:String = NSLocalizedString("OK", comment:"确定")
-//                    let alert = SCLAlertView()
-//                    alert.showTitleWithAction(self, title:"", subTitle:okString, duration:0.0,completeText:closeStr,style: .Success,action:{
-//                        alert.hideView()
-//                        self.navigationController?.popViewControllerAnimated(true)
-//                    })
 
                     
                 }
@@ -253,8 +231,7 @@ class MyInfoCompanyMemberManagerViewController: UIViewController ,UITableViewDat
                 errString = err!
             }
             if(bError){
-                SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                
+                     showError("", errString)                
             }
         })
 
@@ -273,7 +250,6 @@ class MyInfoCompanyMemberManagerViewController: UIViewController ,UITableViewDat
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         var searchtext = searchBar.text
         doSearch(searchBar,searchtext:searchtext)
-        keyboard.endEditing()
     }
     
     

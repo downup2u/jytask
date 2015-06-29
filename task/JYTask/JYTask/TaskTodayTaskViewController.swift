@@ -28,7 +28,7 @@ class TaskTodayTaskViewController: UIViewController ,UITableViewDataSource,UITab
         self.view.autoresizesSubviews = true
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "onDataChanged:", name: ONGETMSGREFRESHDATA, object: nil)
       
-        popDatePicker = PopDatePicker(sourceView: self.view)
+
         self.setMyCurDate(self.curDate)
         
         tableview.sectionHeaderHeight = TableHeaderSectionHeight
@@ -99,16 +99,16 @@ class TaskTodayTaskViewController: UIViewController ,UITableViewDataSource,UITab
         tableview.reloadData()
     }
 
-    var popDatePicker : PopDatePicker?
+
 
     func onClickSelDate(){
         var initDate = self.curDate
-        popDatePicker!.pick(self, initDate:initDate, dataChanged: {
-            (newDate : NSDate, sourceView : UIView) -> () in
+        DatePickerDialog().show(title: "选择日期", doneButtonTitle: "完成", cancelButtonTitle: "取消", datePickerMode: .Date) {
+            (newDate) -> Void in
             
             self.setMyCurDate(newDate)
             self.refreshData()
-        })
+        }
     }
     
 
@@ -400,8 +400,7 @@ class TaskTodayTaskViewController: UIViewController ,UITableViewDataSource,UITab
                     errString = err!
                 }
                 if(bError){
-                    SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                    
+                    showError("", errString)                    
                 }
             })
         }

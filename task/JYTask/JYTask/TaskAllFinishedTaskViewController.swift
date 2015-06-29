@@ -116,27 +116,7 @@ class TaskAllFinishedTaskViewController: UIViewController,UITableViewDataSource,
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "onDataChanged:", name: ONGETMSGREFRESHDATA, object: nil)
         self.searchBar.delegate = self
         self.searchBar.placeholder = "请输入要搜索的任务关键字"
-        var navigationBarViewRect:CGRect = CGRectMake(0.0,0.0,0.0,0.0)
-        keyboard = KeyboardManager(controller: self,navRect:navigationBarViewRect)
-    }
-    
-    
-    var keyboard:KeyboardManager!
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        keyboard.enableKeyboardManger()
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        super.viewWillDisappear(animated)
-        keyboard.disableKeyboardManager()
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        keyboard.endEditing()
-    }
+      }
 
     
     deinit {
@@ -432,8 +412,7 @@ class TaskAllFinishedTaskViewController: UIViewController,UITableViewDataSource,
                     errString = err!
                 }
                 if(bError){
-                    SCLAlertView().showError("", subTitle: errString, closeButtonTitle:NSLocalizedString("OK", comment:"确定"))
-                    
+                    showError("", errString)                    
                 }
             })
         }
@@ -539,7 +518,6 @@ class TaskAllFinishedTaskViewController: UIViewController,UITableViewDataSource,
 
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         var searchtext = searchBar.text
-        keyboard.endEditing()
      //   doSearch(searchBar,searchtext:searchtext)
     }
     
